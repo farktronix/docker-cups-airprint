@@ -1,6 +1,6 @@
-ARG UBUNTU_VERSION=eoan
-FROM ubuntu:$UBUNTU_VERSION
-MAINTAINER drpsychick
+ARG DEBIAN_VERSION=buster-slim
+FROM arm32v5/debian:$DEBIAN_VERSION
+MAINTAINER farktronix 
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
